@@ -40,7 +40,8 @@ function App() {
         formData.append('file', blob, 'uploaded_image.jpg');
 
         try {
-            const response = await axios.post('https://arpzdev.pythonanywhere.com/upload', formData, {
+            // Update the URL to your Vercel deployment
+            const response = await axios.post('https://analyticsarpan.pythonanywhere.com/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             
