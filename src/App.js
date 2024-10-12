@@ -40,7 +40,7 @@ function App() {
         formData.append('file', blob, 'uploaded_image.jpg');
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/upload', formData, {
+            const response = await axios.post('https://arpzdev.pythonanywhere.com/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             
